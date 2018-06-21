@@ -1,4 +1,21 @@
-$(document).ready(function() {
+
+    var startScreen;
+    var gameHTML;
+    var questionCounter = 0;
+    var counter = 15;
+    var selecterAnswer;
+    var theClock;
+    var correctTally = 0;
+    var incorrectTally = 0;
+    var unansweredTally = 0;
+    var questionArray = ["Which year was the first FIFA world cup played?", "Which country has won maximum number of FIFA World Cup?", "Which team won the FIFA World Cup 2014?", "Which team won the first FIFA World Cup?", "How many times Canada has participated in FIFA World Cup?", "Which country is hosting FIFA World Cup 2018?", "Which player has scored the most number of goals in FIFA World Cup?", "Who was the runner up team in World Cup 2014"];
+    var answerArray = [["1930", "1935", "1940", "1945"], ["Germany","Italy","Brazil","Argentina"], ["Spain", "Argentina", "England", "Germany"], ["Brazil","Italy","Uruguay","Egypt"], ["1", "2", "3", "Never"], ["Brazil","Italy","Russia","Germany"], ["Messi", "Ronaldo", "Maradona", "Klose"], ["Italy","Argentina","Germany","Brazil"]];
+    var imageArray = ["<img class='center-block img-right' src='assets/images/Q1.jpg'>", "<img class='center-block img-right' src='assets/images/Q2.jpg'>", "<img class='center-block img-right' src='assets/images/Q3.jpg'>", "<img class='center-block img-right' src='assets/images/Q4.png'>", "<img class='center-block img-right' src='assets/images/Q5.png'>", "<img class='center-block img-right' src='assets/images/Q6.jpg'>", "<img class='center-block img-right' src='assets/images/Q7.jpg'>", "<img class='center-block img-right' src='assets/images/Q8.jpg'>"];
+    var correctAnswers = ["A. 1930", "C. Brazil", "D. Germany", "C. Uruguay", "A. 1", "C. Russia", "D. Klose", "B. Argentina"];
+
+
+$(document).ready(function() {  
+
     // Create a function that creates the start button and initial screen
     
     function initialScreen() {
@@ -109,18 +126,4 @@ $(document).ready(function() {
         generateHTML();
         timerWrapper();
     }
-    
-    var startScreen;
-    var gameHTML;
-    var counter = 15;
-    var questionArray = ["Which year was the first FIFA world cup played?", "Which country has won maximum number of FIFA World Cup?", "Which team won the FIFA World Cup 2014?", "Which team won the first FIFA World Cup?", "How many times Canada has participated in FIFA World Cup?", "Which country is hosting FIFA World Cup 2018?", "Which player has scored the most number of goals in FIFA World Cup?", "Who was the runner up team in World Cup 2014"];
-    var answerArray = [["1930", "1935", "1940", "1945"], ["Germany","Italy","Brazil","Argentina"], ["Spain", "Argentina", "England", "Germany"], ["Brazil","Italy","Uruguay","Egypt"], ["1", "2", "3", "Never"], ["Brazil","Italy","Russia","Germany"], ["Messi", "Ronaldo", "Maradona", "Klose"], ["Italy","Argentina","Germany","Brazil"]];
-    var imageArray = ["<img class='center-block img-right' src='assets/images/Q1.jpg'>", "<img class='center-block img-right' src='assets/images/Q2.jpg'>", "<img class='center-block img-right' src='assets/images/Q3.jpg'>", "<img class='center-block img-right' src='assets/images/Q4.png'>", "<img class='center-block img-right' src='assets/images/Q5.png'>", "<img class='center-block img-right' src='assets/images/Q6.jpg'>", "<img class='center-block img-right' src='assets/images/Q7.jpg'>", "<img class='center-block img-right' src='assets/images/Q8.jpg'>"];
-    var correctAnswers = ["A. 1930", "C. Brazil", "D. Germany", "C. Uruguay", "A. 1", "C. Russia", "D. Klose", "B. Argentina"];
-    var questionCounter = 0;
-    var selecterAnswer;
-    var theClock;
-    var correctTally = 0;
-    var incorrectTally = 0;
-    var unansweredTally = 0;
- 
+
