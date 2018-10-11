@@ -11,6 +11,6 @@ FIFA World Cup Trivia Game
 -	If the player chooses the wrong answer, the player is informed the correct answer.
 -	On the final screen, displays the number of correct answers, incorrect answers, and an option to restart the game (without reloading the page).
 
-Link to My Portfolio: https://anum-shabbir.github.io/Bootstrap-Portfolio/portfolio.html
+Link: https://anum-shabbir.github.io/TriviaGame/
 
 Built With: HTML5 CSS3 JavaScript jQuery
