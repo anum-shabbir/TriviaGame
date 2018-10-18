@@ -1,6 +1,6 @@
 # TriviaGame
 
-Homework#5
+
 
 FIFA World Cup Trivia Game 
 
